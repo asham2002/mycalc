@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="calcs.css">
+    <script src="calcs.js"></script>
+    <center>
+        <h1><u>CALCULATOR</u></h1>
+    </center>
+    <div class="container">
+
+        <table>
+            <tr>
+                <td colspan="3"><input id="number" type="text"  autofocus></td>
+                <td class="red"><button onclick="clean()">C</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="calcs('1')">1</button></td>
+                <td><button onclick="calcs('2')">2</button></td>
+                <td><button onclick="calcs('3')">3</button></td>
+                <td class="last"><button onclick="calcs('+')">+</button></td>
+
+            </tr>
+            <tr>
+                <td><button onclick="calcs('4')">4</button></td>
+                <td><button onclick="calcs('5')">5</button></td>
+                <td><button onclick="calcs('6')">6</button></td>
+                <td class="last" ><button onclick="calcs('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="calcs('7')">7</button></td>
+                <td><button onclick="calcs('8')">8</button></td>
+                <td><button onclick="calcs('9')">9</button></td>
+                <td class="last"><button onclick="calcs('*')">*</button></td>
+
+            </tr>
+            <tr>  
+                <td><button onclick="calcs('0')">0</button></td>
+                <td class="last"><button onclick="calcs('.')">.</button></td>
+                <td class="last"><button onclick="solve(   )">=</button></td>
+                <td class="last"><button onclick="calcs('/')">/</button></td>
+
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
